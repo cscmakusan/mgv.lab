@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mark Gil Velasco — Network & Security Engineer portfolio.">
+<title>MARK.GV // Network & Security Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanlines"></div>
+<header class="topbar">
+  <a class="brand" href="#top"><span class="pulse"></span> MARK.GV <small>// NETSEC</small></a>
+  <nav>
+    <a href="#about">ABOUT</a><a href="#projects">PROJECTS</a><a href="#arsenal">ARSENAL</a><a href="#home-lab">HOME LAB</a><a href="#timeline">TIMELINE</a><a href="#contact">CONTACT</a>
+  </nav>
+  <div class="status"><span class="dot"></span> SYSTEM ACTIVE <span class="status-sep">//</span> VISITORS <b id="visitorCountTop">--</b></div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="profile-intro">
+      <div class="profile-avatar"><img src="profile.png" alt="Mark Gil Velasco"></div>
+      <div class="profile-meta">
+        <div class="profile-name">Mark Gil Velasco <span class="verified">✓</span></div>
+        <div class="profile-role">NETWORK &amp; SECURITY ENGINEER</div>
+        <div class="social-links" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/markgilawatvelasco/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://www.facebook.com/miccsaaan/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://cscmakusan.github.io/mgv.github.io/#home-lab" target="_blank" rel="noopener" aria-label="Portfolio">↗</a>
+          <a href="mailto:markgilawatvelasco@gmail.com" aria-label="Email">@</a>
+        </div>
+      </div>
+    </div>
+    <div class="eyebrow">NETWORK_SECURITY_ENGINEER / PHILIPPINES</div>
+    <h1>Secure networks.<br><span>Engineered resilience.</span></h1>
+    <p class="lead">Network & Security Engineer focused on enterprise connectivity, FortiGate security, troubleshooting and infrastructure resilience.</p>
+    <div class="actions"><a class="btn primary" href="#labs">VIEW LAB ARCHIVE →</a><a class="btn" href="#contact">ESTABLISH CONNECTION</a></div>
+    <div class="chips"><span>CCNA</span><span>FORTINET</span><span>FIREWALL</span><span>VPN</span><span>NETWORKING</span></div>
+    <div class="tools-strip">
+      <div class="tools-label">TOOLS I WORK WITH</div>
+      <div class="tools-marquee" aria-label="Tools I work with">
+        <div class="tools-track">
+          <div class="tools-list">
+            <span>FortiGate</span><span>FortiManager</span><span>Cisco</span><span>Palo Alto</span><span>Check Point</span><span>Proxmox VE</span><span>OPNsense</span><span>EVE-NG</span><span>PNETLab</span><span>Wireshark</span><span>Microsoft Entra ID</span>
+          </div>
+          <div class="tools-list" aria-hidden="true">
+            <span>FortiGate</span><span>FortiManager</span><span>Cisco</span><span>Palo Alto</span><span>Check Point</span><span>Proxmox VE</span><span>OPNsense</span><span>EVE-NG</span><span>PNETLab</span><span>Wireshark</span><span>Microsoft Entra ID</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="noc-dashboard">
+    <div class="dashboard-top">
+      <div><span class="pulse"></span> SECURE OPERATIONS CENTER</div>
+      <span id="clock">--:--:--</span>
+    </div>
+    <div class="dashboard-grid">
+      <div class="command-panel">
+        <div class="panel-head"><span>FORTIGATE_CLI // SECURE_TERMINAL</span><span>● ● ●</span></div>
+        <div class="terminal-screen" id="terminalOutput">
+          <div><span class="muted">mark@netsec</span>:~$ <span class="cyan">help</span></div>
+          <div class="terminal-line muted">Commands: <b>route</b> · <b>vpn</b> · <b>firewall</b> · <b>sniff</b> · <b>arp</b> · <b>system</b> · <b>topology</b> · <b>certs</b> · <b>clear</b></div>
+          <div><span class="green">[ OK ]</span> CLI session · FortiOS 7.6</div>
+          <div class="cli-prompt"><span class="muted">mark@netsec</span>:~$ <input id="cliInput" aria-label="Network security command" autocomplete="off" spellcheck="false"><span class="cursor">█</span></div>
+        </div>
+        <div class="terminal-hint">Try <b>vpn</b>, <b>route</b>, <b>sniff</b> or <b>help</b></div>
+      </div>
+
+      <aside class="telemetry">
+        <div class="telemetry-title">SYSTEM TELEMETRY <span>LIVE</span></div>
+        <div class="gauge"><div><b id="cpu">23%</b><small>CPU</small></div><div class="ring r1"></div></div>
+        <div class="gauge"><div><b id="mem">41%</b><small>MEMORY</small></div><div class="ring r2"></div></div>
+        <div class="stat-row"><span>FIREWALL</span><b class="green-text">ONLINE</b></div>
+        <div class="stat-row"><span>IPSEC</span><b class="green-text">3 UP</b></div>
+        <div class="stat-row"><span>HA</span><b class="green-text">READY</b></div>
+        <div class="stat-row"><span>FMG</span><b class="green-text">SYNCED</b></div>
+      </aside>
+    </div>
+    <div class="network-strip">
+      <div class="mini-node"><span>WAN</span><b>ONLINE</b></div><i></i>
+      <div class="mini-node firewall-node"><span>SECURITY</span><b>FORTIGATE</b></div><i></i>
+      <div class="mini-node"><span>CORE</span><b>SWITCH</b></div>
+      <div class="traffic"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="metrics">
+  <div><b>08+</b><span>CORE CERTIFICATIONS</span></div>
+  <div><b>07.6</b><span>FORTIOS FOCUS</span></div>
+  <div><b>24/7</b><span>TROUBLESHOOTING MINDSET</span></div>
+  <div><b>LAB</b><span>EVE-NG / PNETLAB / PROXMOX</span></div>
+  <div><b id="visitorCount">--</b><span>SITE VISITORS</span></div>
+</section>
+
+<section id="about" class="section">
+  <div class="section-label">01 // IDENTITY</div>
+  <div class="section-grid">
+    <div><h2>Network &<br><em>Security Engineering.</em></h2></div>
+    <div>
+      <p class="large">My work sits where <strong>network reliability</strong> meets <strong>security engineering</strong>. I enjoy understanding why traffic fails, where it is being filtered, how routes are selected, and how infrastructure can be designed to stay secure and available.</p>
+      <p>From FortiGate policy and VPN troubleshooting to VLAN segmentation, routing, switching and lab-based enterprise architectures, I approach problems methodically: observe → isolate → validate → resolve.</p>
+    </div>
+  </div>
+</section>
+
+<section id="arsenal" class="section dark-section">
+  <div class="section-label">02 // TECHNICAL ARSENAL</div>
+  <h2>Infrastructure <em>Stack.</em></h2>
+  <div class="arsenal-grid">
+    <article><div class="num">01</div><h3>NETWORKING</h3><p>TCP/IP · VLAN · Trunking · Routing · Switching · DHCP · DNS · OSPF · NAT · ARP · Network Design</p></article>
+    <article><div class="num">02</div><h3>SECURITY</h3><p>FortiGate · FortiOS 7.6 · Firewall Policies · IPsec VPN · SSL/SAML VPN · IPS · Web Filtering · HA · VIP/DNAT</p></article>
+    <article><div class="num">03</div><h3>MANAGEMENT</h3><p>FortiManager Cloud · FortiClient EMS · Centralized Policy · Device Management · Security Operations</p></article>
+    <article><div class="num">04</div><h3>LAB / INFRA</h3><p>EVE-NG · PNETLab · Proxmox · OPNsense · Ruijie · Virtualization · VLAN Lab Environments</p></article>
+  </div>
+</section>
+
+<section id="labs" class="section">
+  <div class="section-label">03 // PROJECT_ARCHIVE</div>
+  <div class="section-heading"><h2>Selected <em>Labs.</em></h2><span>CASE FILES / ENGINEERING NOTES</span></div>
+  <div class="projects">
+    <article class="project">
+      <div class="project-id">LAB-001</div><h3>FORTIGATE ENTERPRISE SECURITY LAB</h3>
+      <p>Firewall policies, NAT/VIP, routing, IPsec VPN, troubleshooting workflows and security controls using FortiOS 7.6.</p>
+      <div class="tags"><span>FORTIGATE</span><span>IPSEC</span><span>FIREWALL</span></div>
+    </article>
+    <article class="project">
+      <div class="project-id">LAB-002</div><h3>FORTIMANAGER / CENTRALIZED OPERATIONS</h3>
+      <p>Centralized device and policy management concepts, FortiManager workflows, discovery and enterprise administration.</p>
+      <div class="tags"><span>FMG</span><span>POLICY</span><span>OPS</span></div>
+    </article>
+    <article class="project">
+      <div class="project-id">LAB-003</div><h3>PROXMOX + OPNSENSE SEGMENTATION</h3>
+      <p>Virtualized firewall lab with management, workstation and IoT VLANs, trunking and routed network segments.</p>
+      <div class="tags"><span>PROXMOX</span><span>VLAN</span><span>OPNSENSE</span></div>
+    </article>
+    <article class="project">
+      <div class="project-id">LAB-004</div><h3>IPSEC TROUBLESHOOTING WORKBENCH</h3>
+      <p>A repeatable workflow for Phase 1/2, selectors, routes, policies, ARP and packet-flow analysis when tunnels misbehave.</p>
+      <div class="tags"><span>VPN</span><span>DEBUG</span><span>PACKET FLOW</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="projects" class="section professional-projects">
+<div class="section-label">03 // PROJECT_ARCHIVE</div>
+<div class="section-heading"><h2>Professional <em>Projects.</em></h2><span>ENTERPRISE NETWORK / SECURITY / DATA CENTER</span></div>
+<div class="project-filter">
+<button class="filter-btn active" data-filter="all">ALL</button><button class="filter-btn" data-filter="security">SECURITY</button>
+<button class="filter-btn" data-filter="datacenter">DATA CENTER</button><button class="filter-btn" data-filter="network">NETWORK</button><button class="filter-btn" data-filter="remote">REMOTE ACCESS</button>
+</div><div class="projects"><article class="project professional-card" data-category="datacenter">
+<div class="project-top"><div class="project-id">PROJECT-001</div><span class="project-type">DATA CENTER</span></div>
+<h3>DATA CENTER TRANSFORMATION</h3><div class="project-subtitle">Legacy 3-Tier → Spine-Leaf Fabric Migration</div><p>Data center architecture modernization focused on migrating from a traditional three-tier design to a scalable spine-leaf fabric.</p>
+<div class="project-meta"><span>SPINE-LEAF</span><span>DATA CENTER</span><span>MIGRATION</span></div>
+<button class="case-btn" onclick="toggleCase(this)">VIEW CASE STUDY →</button>
+<div class="case-study"><div><b>ENGINEERING SCOPE</b><p>Architecture · migration · implementation · validation · troubleshooting · operational handover</p></div>
+<div><b>TECHNICAL FOCUS</b><p>SPINE-LEAF, DATA CENTER, MIGRATION</p></div></div></article><article class="project professional-card" data-category="security">
+<div class="project-top"><div class="project-id">PROJECT-002</div><span class="project-type">SECURITY</span></div>
+<h3>FORTINET SECURE REMOTE ACCESS</h3><div class="project-subtitle">IPsec VPN + Microsoft Entra ID SSO via FortiManager</div><p>Enterprise VPN deployment integrating Fortinet IPsec connectivity with Microsoft Entra ID SSO and centralized FortiManager administration.</p>
+<div class="project-meta"><span>FORTIGATE</span><span>IPSEC</span><span>ENTRA ID</span><span>FMG</span></div>
+<button class="case-btn" onclick="toggleCase(this)">VIEW CASE STUDY →</button>
+<div class="case-study"><div><b>ENGINEERING SCOPE</b><p>Architecture · migration · implementation · validation · troubleshooting · operational handover</p></div>
+<div><b>TECHNICAL FOCUS</b><p>FORTIGATE, IPSEC, ENTRA ID, FMG</p></div></div></article><article class="project professional-card" data-category="security">
+<div class="project-top"><div class="project-id">PROJECT-003</div><span class="project-type">SECURITY</span></div>
+<h3>NEXT-GENERATION INTERNAL FIREWALL MIGRATION</h3><div class="project-subtitle">Check Point 23500 → Maestro Orchestration</div><p>Migration of legacy internal firewall infrastructure to a scalable Check Point Maestro architecture for improved resilience and orchestration.</p>
+<div class="project-meta"><span>CHECK POINT</span><span>MAESTRO</span><span>HA</span><span>MIGRATION</span></div>
+<button class="case-btn" onclick="toggleCase(this)">VIEW CASE STUDY →</button>
+<div class="case-study"><div><b>ENGINEERING SCOPE</b><p>Architecture · migration · implementation · validation · troubleshooting · operational handover</p></div>
+<div><b>TECHNICAL FOCUS</b><p>CHECK POINT, MAESTRO, HA, MIGRATION</p></div></div></article><article class="project professional-card" data-category="security">
+<div class="project-top"><div class="project-id">PROJECT-004</div><span class="project-type">SECURITY</span></div>
+<h3>ENTERPRISE NGFW MIGRATION</h3><div class="project-subtitle">Cisco Firepower 2130 → Secure Firewall 3100</div><p>Next-generation firewall modernization focused on platform migration, security policy continuity and enterprise connectivity.</p>
+<div class="project-meta"><span>CISCO</span><span>NGFW</span><span>MIGRATION</span></div>
+<button class="case-btn" onclick="toggleCase(this)">VIEW CASE STUDY →</button>
+<div class="case-study"><div><b>ENGINEERING SCOPE</b><p>Architecture · migration · implementation · validation · troubleshooting · operational handover</p></div>
+<div><b>TECHNICAL FOCUS</b><p>CISCO, NGFW, MIGRATION</p></div></div></article><article class="project professional-card" data-category="datacenter">
+<div class="project-top"><div class="project-id">PROJECT-005</div><span class="project-type">DATA CENTER</span></div>
+<h3>DMZ INFRASTRUCTURE MODERNIZATION</h3><div class="project-subtitle">HPE 5K → Cisco Nexus 9000</div><p>Modernization of DMZ core-edge switching infrastructure through migration to Cisco Nexus 9000 platforms.</p>
+<div class="project-meta"><span>NEXUS 9000</span><span>DMZ</span><span>HPE</span><span>MIGRATION</span></div>
+<button class="case-btn" onclick="toggleCase(this)">VIEW CASE STUDY →</button>
+<div class="case-study"><div><b>ENGINEERING SCOPE</b><p>Architecture · migration · implementation · validation · troubleshooting · operational handover</p></div>
+<div><b>TECHNICAL FOCUS</b><p>NEXUS 9000, DMZ, HPE, MIGRATION</p></div></div></article><article class="project professional-card" data-category="datacenter">
+<div class="project-top"><div class="project-id">PROJECT-006</div><span class="project-type">DATA CENTER</span></div>
+<h3>NEXUS 9000 vPC ARCHITECTURE TRANSFORMATION</h3><div class="project-subtitle">Single-Sided vPC → Dual-Sided vPC</div><p>Transformation of Nexus 9000 vPC architecture to improve redundancy and operational resilience.</p>
+<div class="project-meta"><span>NEXUS 9K</span><span>vPC</span><span>REDUNDANCY</span></div>
+<button class="case-btn" onclick="toggleCase(this)">VIEW CASE STUDY →</button>
+<div class="case-study"><div><b>ENGINEERING SCOPE</b><p>Architecture · migration · implementation · validation · troubleshooting · operational handover</p></div>
+<div><b>TECHNICAL FOCUS</b><p>NEXUS 9K, vPC, REDUNDANCY</p></div></div></article><article class="project professional-card" data-category="remote">
+<div class="project-top"><div class="project-id">PROJECT-007</div><span class="project-type">REMOTE ACCESS</span></div>
+<h3>REMOTE ACCESS INFRASTRUCTURE</h3><div class="project-subtitle">Palo Alto GlobalProtect VPN Deployment</div><p>Deployment of Palo Alto GlobalProtect remote-access VPN infrastructure for secure enterprise connectivity.</p>
+<div class="project-meta"><span>PALO ALTO</span><span>GLOBALPROTECT</span><span>VPN</span></div>
+<button class="case-btn" onclick="toggleCase(this)">VIEW CASE STUDY →</button>
+<div class="case-study"><div><b>ENGINEERING SCOPE</b><p>Architecture · migration · implementation · validation · troubleshooting · operational handover</p></div>
+<div><b>TECHNICAL FOCUS</b><p>PALO ALTO, GLOBALPROTECT, VPN</p></div></div></article><article class="project professional-card" data-category="network">
+<div class="project-top"><div class="project-id">PROJECT-008</div><span class="project-type">NETWORK</span></div>
+<h3>MULTI-DEPARTMENT NETWORK IMPLEMENTATION</h3><div class="project-subtitle">Layer 1 Structured Cabling → Layer 3 Failover & Segmentation</div><p>End-to-end network implementation spanning structured cabling, switching, Layer 3 routing, segmentation and failover.</p>
+<div class="project-meta"><span>L1</span><span>L2</span><span>L3</span><span>FAILOVER</span></div>
+<button class="case-btn" onclick="toggleCase(this)">VIEW CASE STUDY →</button>
+<div class="case-study"><div><b>ENGINEERING SCOPE</b><p>Architecture · migration · implementation · validation · troubleshooting · operational handover</p></div>
+<div><b>TECHNICAL FOCUS</b><p>L1, L2, L3, FAILOVER</p></div></div></article><article class="project professional-card" data-category="security">
+<div class="project-top"><div class="project-id">PROJECT-009</div><span class="project-type">SECURITY</span></div>
+<h3>NETWORK SECURITY TRANSFORMATION</h3><div class="project-subtitle">FortiGate NGFW in Legacy Layer 2 Infrastructure</div><p>Integration of FortiGate NGFW capabilities into an existing Layer 2 environment to introduce segmentation and security policy enforcement.</p>
+<div class="project-meta"><span>FORTIGATE</span><span>NGFW</span><span>SEGMENTATION</span></div>
+<button class="case-btn" onclick="toggleCase(this)">VIEW CASE STUDY →</button>
+<div class="case-study"><div><b>ENGINEERING SCOPE</b><p>Architecture · migration · implementation · validation · troubleshooting · operational handover</p></div>
+<div><b>TECHNICAL FOCUS</b><p>FORTIGATE, NGFW, SEGMENTATION</p></div></div></article><article class="project professional-card" data-category="network">
+<div class="project-top"><div class="project-id">PROJECT-010</div><span class="project-type">NETWORK</span></div>
+<h3>ENTERPRISE ARCHITECTURE OPTIMIZATION</h3><div class="project-subtitle">High-Availability Collapsed Core Network Design</div><p>Implementation of a high-availability collapsed-core architecture designed to simplify infrastructure while improving resiliency.</p>
+<div class="project-meta"><span>COLLAPSED CORE</span><span>HA</span><span>L3</span><span>REDUNDANCY</span></div>
+<button class="case-btn" onclick="toggleCase(this)">VIEW CASE STUDY →</button>
+<div class="case-study"><div><b>ENGINEERING SCOPE</b><p>Architecture · migration · implementation · validation · troubleshooting · operational handover</p></div>
+<div><b>TECHNICAL FOCUS</b><p>COLLAPSED CORE, HA, L3, REDUNDANCY</p></div></div></article></div></section>
+
+<section id="home-lab" class="topology-section">
+  <div class="section-label">04 // NETWORK_VIEW</div>
+
+  <div class="topology-header">
+    <div>
+      <h2>Traffic <em>Path.</em></h2>
+      <p class="topology-subtitle">
+        Proxmox + OPNsense Home Lab // VLAN Segmentation
+      </p>
+    </div>
+
+    <div class="topology-status">
+      <span class="status-dot"></span>
+      HOME LAB ONLINE
+    </div>
+  </div>
+
+  <div class="topology">
+
+    <!-- INTERNET -->
+    <div class="node internet-node">
+      <div class="node-icon">◎</div>
+      <span>WAN</span>
+      <b>INTERNET</b>
+      <small>UPLINK</small>
+    </div>
+
+    <div class="connection"><span></span></div>
+
+    <!-- PROXMOX -->
+    <div class="node proxmox-node">
+      <div class="node-icon">✕</div>
+      <span>HYPERVISOR</span>
+      <b>PROXMOX VE</b>
+      <small>192.168.100.10</small>
+    </div>
+
+    <div class="connection"><span></span></div>
+
+    <!-- OPNSENSE -->
+    <div class="node opnsense-node">
+      <div class="node-icon">◈</div>
+      <span>FIREWALL / ROUTER</span>
+      <b>OPNSENSE</b>
+      <small>192.168.100.1</small>
+    </div>
+
+    <div class="connection"><span></span></div>
+
+    <!-- L2 SWITCH -->
+    <div class="node switch-node">
+      <div class="node-icon">▣</div>
+      <span>VLAN AWARE</span>
+      <b>L2 MANAGED SWITCH</b>
+      <small>802.1Q TRUNK</small>
+    </div>
+
+    <!-- VLANs -->
+    <div class="vlan-connections">
+
+      <div class="vlan-column vlan-management">
+        <div class="vlan-line"></div>
+        <div class="vlan-card">
+          <span class="vlan-id">VLAN 100</span>
+          <b>MANAGEMENT</b>
+          <small>192.168.100.0/24</small>
+        </div>
+        <div class="devices">
+          <div class="device"><span>▣</span><small>PROXMOX</small></div>
+          <div class="device"><span>▱</span><small>ADMIN PC</small></div>
+          <div class="device"><span>⚙</span><small>NET TOOLS</small></div>
+        </div>
+      </div>
+
+      <div class="vlan-column vlan-workstations">
+        <div class="vlan-line"></div>
+        <div class="vlan-card">
+          <span class="vlan-id">VLAN 200</span>
+          <b>WORKSTATIONS</b>
+          <small>192.168.200.0/24</small>
+        </div>
+        <div class="devices">
+          <div class="device"><span>▱</span><small>PC / LAPTOP</small></div>
+          <div class="device"><span>▣</span><small>LAB SERVER</small></div>
+          <div class="device"><span>▱</span><small>DEVICES</small></div>
+        </div>
+      </div>
+
+      <div class="vlan-column vlan-iot">
+        <div class="vlan-line"></div>
+        <div class="vlan-card">
+          <span class="vlan-id">VLAN 50</span>
+          <b>AP / IOT</b>
+          <small>192.168.50.0/24</small>
+        </div>
+        <div class="devices">
+          <div class="device"><span>⌁</span><small>ACCESS POINT</small></div>
+          <div class="device"><span>◉</span><small>IP CAMERA</small></div>
+          <div class="device"><span>◇</span><small>IOT DEVICES</small></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LAB CONFIG -->
+    <div class="lab-info">
+      <div class="lab-title">HOME LAB CONFIGURATION</div>
+      <div class="lab-row"><span>HYPERVISOR</span><b>PROXMOX VE</b></div>
+      <div class="lab-row"><span>FIREWALL</span><b>OPNSENSE</b></div>
+      <div class="lab-row"><span>SWITCH</span><b>L2 MANAGED</b></div>
+      <div class="lab-row"><span>UPLINK</span><b>802.1Q TRUNK</b></div>
+      <div class="lab-row"><span>SEGMENTS</span><b>100 / 200 / 50</b></div>
+    </div>
+
+    <!-- LEGEND -->
+    <div class="topology-legend">
+      <div class="legend-title">NETWORK LEGEND</div>
+      <div><i class="legend-line"></i> Network Connection</div>
+      <div><i class="legend-line trunk"></i> VLAN Trunk</div>
+      <div><i class="legend-dot management"></i> VLAN 100 — Management</div>
+      <div><i class="legend-dot workstation"></i> VLAN 200 — Workstations</div>
+      <div><i class="legend-dot iot"></i> VLAN 50 — AP / IoT</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="timeline" class="section">
+  <div class="section-label">05 // CAREER_PATH</div>
+  <h2>Professional <em>Trajectory.</em></h2>
+  <div class="timeline">
+    <div class="event active"><div class="date">2026 — PRESENT</div><div><span class="state">ACTIVE</span><h3>NETWORK & SECURITY ENGINEERING</h3><p>Enterprise infrastructure support, FortiGate/FortiManager operations, troubleshooting, firewall/VPN administration and network reliability.</p></div></div>
+    <div class="event"><div class="date">FORTINET</div><div><span class="state">CERTIFIED</span><h3>ADVANCED SECURITY ENGINEERING</h3><p>Progression through Fortinet administration, management, network security support and enterprise firewall engineering.</p></div></div>
+    <div class="event"><div class="date">LAB / CONTINUOUS</div><div><span class="state">BUILDING</span><h3>NETWORK AUTOMATION & ARCHITECTURE</h3><p>Hands-on learning through EVE-NG, PNETLab, Proxmox and OPNsense to reproduce enterprise scenarios and troubleshoot from packet to policy.</p></div></div>
+  </div>
+</section>
+
+<section class="cert-section">
+  <div class="section-label">06 // CREDENTIALS</div>
+  <h2>Certification <em>Matrix.</em></h2>
+  <div class="certs">
+    <span>CCNA</span><span>AZ-900</span><span>NSE 4</span><span>NSE 5</span><span>NSE 6</span><span>NSE 7</span><span>FCP</span><span>FCSS</span>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="section-label">07 // COMM_LINK</div>
+  <div class="contact-grid">
+    <div><h2>Establish a<br><em>Secure Connection.</em></h2><p>For networking, security engineering, infrastructure and technical collaboration.</p></div>
+    <form onsubmit="return sendMail(event)">
+      <label>IDENTITY<input id="name" required placeholder="ENTER NAME"></label>
+      <label>EMAIL_ADDRESS<input id="email" type="email" required placeholder="ENTER EMAIL"></label>
+      <label>TRANSMISSION_DATA<textarea id="message" required placeholder="ENTER MESSAGE"></textarea></label>
+      <button class="btn primary" type="submit">TRANSMIT →</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><span>MARK.GV // NETWORK & SECURITY ENGINEER</span><span>© 2026 · SECURE BY DESIGN</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
